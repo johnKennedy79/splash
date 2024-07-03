@@ -5,21 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash</title>
     <link rel="stylesheet" href="style.css">
+    <script src = "script.js"></script>
 </head>
 <body>
     <main class="container">
-        <Section class="top">
+        <header class="top">
             <p>Keep on chomping...</p>
             <h1>Business Beavers Ltd.</h1>
-            <p>Buying things cheap and selling them for more since 94</p>
-        </Section>
+            <h2>Buying things cheap and selling them for more since 94</h2>
+        </header>
         <Section class="mid">
-            <div class="address"></div>
-            <div class="contact"></div>
+            <address class="address">
+                <p id="firstLine">
+                    <script>
+                        document.getElementById("firstLine").innerHTML = firstLine
+                        
+                    </script>    
+                </p>
+                <p id="town">
+                    <script>
+                        document.getElementById("town").innerHTML = town;
+                    </script>    
+                </p>
+                <p id="county">
+                    <script>
+                        document.getElementById("county").innerHTML = county;
+                    </script>    
+                </p>
+                <p id="postCode">
+                <script>
+                    document.getElementById("postCode").innerHTML = postCode;
+                </script>    
+                </p>
+            </address>
+            <contact class="contact">
+                <p id="tel">
+                    <script>
+                        document.getElementById("tel").innerHTML = tel;
+                    </script>
+                </p> 
+                <p id="email">mailto:
+                    <script>
+                        document.getElementById("email").innerHTML = email;
+                    </script>
+                </p>
+            </contact>
         </Section>
-        <Section class="foot">
-            <p>Copyright 2029 Business Beavers Ltd. Company #1</p>
-        </Section>
+        <footer class="foot">
+            <p>&copy; 2029 Business Beavers Ltd. Company #1</p>
+        </footer>
     </main>
     
 </body>
